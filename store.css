@@ -1,6 +1,6 @@
 div.gallery{
   margin:10px;
-  border:8px solid #504210;
+  border:8px solid DarkSlateGray;
   float:left;
   height:50%;
   background-color:white;
@@ -8,7 +8,7 @@ div.gallery{
 }
 
 div.gallery:hover{
-  border:8px solid #225A67;
+  border:8px solid LightSlateGrey;
 }
 
 div.gallery img{
