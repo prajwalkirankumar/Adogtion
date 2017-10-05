@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+*{
+    box-sizing: border-box;
+}
+
+.grid_el{
+    display:block;
+    width: 50%;
+    float: left;
+    position: relative;
+    display:inline-block;
+    margin:0;
+    padding:0;
+    top:0;
+    bottom:0;
+}
+
+.cell {
+    display:block;
+    position: relative;
+    overflow:hidden;
+    margin:0;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: tomato;
+}
+
+.grid_el:hover .overlay {
+  opacity: 0.8;
+}
+
+.grid_el:hover .image{
+
+  transform: scale(1.05);
+  transition: .5s ease;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body>
+<table>
+<tr>
+  <td class="grid_el">
+    <a href="ss.html" class="cell">
+      <img src="home.jpg" alt="Avatar" class="image">
+      <div class="overlay">
+        <div class="text">Home</div>
+      </div>
+    </a>
+  </td>
+  <td class="grid_el">
+    <a href="About.html" class="cell">
+      <img src="whatwedo.jpg" alt="Avatar" class="image">
+      <div class="overlay">
+        <div class="text">What We Do</div>
+      </div>
+    </a>
+  </td>
+</tr>
+<tr>
+  <td class="grid_el">
+    <a href="LoginPage.html" class="cell">
+      <img src="family.jpg" alt="Avatar" class="image">
+      <div class="overlay">
+        <div class="text">Sign Up</div>
+      </div>
+    </a>
+  </td>
+  <td class="grid_el">
+    <a href="About.html" class="cell">
+      <img src="contactus.jpeg" alt="Avatar" class="image">
+      <div class="overlay">
+        <div class="text">Contact</div>
+      </div>
+    </a>
+  </td>
+</tr>
+<tr>
+  <td class="grid_el">
+    <a href="LoginPage.html" class="cell">
+      <img src="store.jpg" alt="Avatar" class="image">
+      <div class="overlay">
+        <div class="text">Store</div>
+      </div>
+    </a>
+  </td>
+  <td class="grid_el">
+    <a href="About.html" class="cell">
+      <img src="don.jpg" alt="Avatar" class="image">
+      <div class="overlay">
+        <div class="text">Donate</div>
+      </div>
+    </a>
+  </td>
+</tr>
+</table>
+</body>
+</html>
