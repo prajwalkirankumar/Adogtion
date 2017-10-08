@@ -1,0 +1,53 @@
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+    width: 220px;
+    height: 100%;
+    background-color: #006064 ;
+}
+#logo{
+  display: block;
+  padding-left: 0;
+  padding-right: 15px;
+  padding-top: 0;
+  padding-bottom: 25px;
+  width: 220px;
+  height: 100px;
+}
+
+li a {
+    display: block;
+    color: black;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-decoration: none;
+    text-align: center;
+    font-weight:bold;
+    font-size:28px;
+    font-family:'Oswald', sans-serif;
+}
+
+li a.active {
+    background-color:#a7ffeb ;
+    color: black;
+}
+
+li a:hover:not(.active) {
+    background-color:#a7ffeb ;
+    color: black;
+}
+#taskbar{
+  height: 100%;
+  width:220px;
+  margin: 0;
+  position: fixed;
+  padding: 0;
+  float: left;
+}
+body{
+  margin: 0;
+}

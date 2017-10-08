@@ -1,12 +1,17 @@
 div.gallery{
-  margin:10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   border:8px solid DarkSlateGray;
   float:left;
   height:50%;
   background-color:white;
   cursor:pointer;
 }
-
+table{
+  margin-left: 230px;
+}
 div.gallery:hover{
   border:8px solid LightSlateGrey;
 }
@@ -125,4 +130,14 @@ div.desc2{
 .pagination a:hover{
   background-color:blue;
   cursor:pointer;
+}
+#x{
+  align-content: center;
+}
+.heading{
+  background-color: white;
+  color: black;
+  align-content: center;
+  height:100px;
+  width: 1000px;
 }

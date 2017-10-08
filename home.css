@@ -1,32 +1,30 @@
 *{
     box-sizing: border-box;
-    background-color: black;
+    background-color: white;
 }
 
 .grid_el{
+
     display:block;
-    width: 50%;
+    width: 33.33%;
+    height: 330px;
     float: left;
     position: relative;
-    display:inline-block;
+    border-collapse: collapse;
+    overflow:hidden;
     margin:0;
     padding:0;
     top:0;
     bottom:0;
 }
 
-.cell {
-    display:block;
-    position: relative;
-    overflow:hidden;
-    margin:0;
-}
 
 .image {
   display: block;
   width: 100%;
-  height: auto;
-  margin:default;
+  height: 100%;
+  margin:0;
+  padding:0;
 }
 
 .overlay {

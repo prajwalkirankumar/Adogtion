@@ -3,8 +3,32 @@
 <head>
   <title>Welcome to the Store!</title>
   <link rel="stylesheet" type="text/css" href="store.css">
+  <link rel="stylesheet" href="realhome.css">
+  <link href='https://fonts.googleapis.com/css?family=Fredoka One' rel='stylesheet'>
 </head>
 <body style="background-color:rgb(20,20,20)">
+  <div id="taskbar">
+
+  <ul>
+    <li><img id="logo" src="logo.png"></li>
+    <li class="opt"><a href="home.html">Home</a></li>
+    <li class="opt"><a href="about.html">About Us</a></li>
+    <li class="opt"><a href="store.html">Store</a></li>
+    <li class="opt"><a href="donate.html">Donate</a></li>
+    <li class="opt"><a href="signup.html">SignUp</a></li>
+    <li class="opt"><a href="index.html">Contact Us</a></li>
+  </ul>
+  </div>
+  <table>
+  <tr>
+    <td colspan="4">
+    <div class="heading">
+    <h2>STORE</h2>
+    <div>
+  </td>
+  </tr>
+  <tr>
+  <td>
   <div class="gallery">
     <img id="img" src="images.jpg" alt="something" onclick=modal(this)>
     <div class=desc1>
@@ -15,6 +39,8 @@
       <p>Location</p>
     </div>
   </div>
+</td>
+<td>
   <div class="gallery">
     <img src="images.jpg" alt="something" onclick=modal(this)>
     <div class=desc1>
@@ -25,6 +51,8 @@
       <p>Location</p>
     </div>
   </div>
+</td>
+<td>
   <div class="gallery">
     <img src="images.jpg" alt="something" onclick=modal(this)>
     <div class=desc1>
@@ -35,6 +63,8 @@
       <p>Location</p>
     </div>
   </div>
+</td>
+<td>
   <div class="gallery">
     <img src="images.jpg" alt="something" onclick=modal(this)>
     <div class=desc1>
@@ -45,7 +75,10 @@
       <p>Location</p>
     </div>
   </div>
-  <br>
+</td>
+</tr>
+<tr>
+<td>
   <div class="gallery">
     <img src="images.jpg" alt="something" onclick=modal(this)>
     <div class=desc1>
@@ -56,6 +89,8 @@
       <p>Location</p>
     </div>
   </div>
+</td>
+<td>
   <div class="gallery">
     <img src="images.jpg" alt="something" onclick=modal(this)>
     <div class=desc1>
@@ -66,6 +101,8 @@
       <p>Location</p>
     </div>
   </div>
+</td>
+<td>
   <div class="gallery">
     <img src="images.jpg" alt="something" onclick=modal(this)>
     <div class=desc1>
@@ -76,6 +113,8 @@
       <p>Location</p>
     </div>
   </div>
+</td>
+<td>
   <div class="gallery">
     <img src="images.jpg" alt="something" onclick=modal(this)>
     <div class=desc1>
@@ -86,8 +125,11 @@
       <p>Location</p>
     </div>
   </div>
-
+</td>
   <!-- The Modal -->
+</tr>
+<tr>
+  <td>
 <div id="myModal" class="modal">
   <span class="close">x</span>
   <img class="modal-content" id="img01">
@@ -103,6 +145,9 @@
   <a href="#">&raquo;</a>
 </div>
 </div>
+</td>
+</tr>
+</table>
 </body>
 <script src="storescript.js"></script>
 </html>
