@@ -523,12 +523,4 @@ function loadsignup()
     signup.style.visibility="visible";
 }
 
-function validate()
-{
-  if(document.getElementsByName("pword1").value!==document.getElementsByName("pword2").value)
-  {
-    alert("Passwords do not match!");
-    location.reload();
-  }
-}
 </script>
