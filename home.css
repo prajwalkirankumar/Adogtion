@@ -6,8 +6,8 @@
 .grid_el{
 
     display:block;
-    width: 50%;
-    height: 400px;
+    width: 33.33%;
+    height: 335px;
     float: left;
     position: relative;
     border-collapse: collapse;
