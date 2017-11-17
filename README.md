@@ -1,1 +1,1 @@
-fuck you
+A website to adopt dogs.
