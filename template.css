@@ -106,7 +106,8 @@ li.dropdown {
     color: white;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {background-color:#9e9e9e;
+                                color:black;}
 
 .dropdown:hover .dropdown-content {
     display: block;
