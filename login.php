@@ -97,11 +97,19 @@ function test_input($data) {
 <html>
 <head>
   <style>
-  body{
-    margin:0;
-    padding:0;
+  div.background {
+    background: url(dogwall.jpg);
+    background-size:100%;
+    height:800px;
+    width:100%;
+    position: absolute  ;
+    margin: 0;
+    padding: 0;
   }
-  ul {
+  .navbar{
+    margin: 0;
+  }
+  .navbar>ul {
       list-style-type: none;
       margin: 0;
       padding: 0;
@@ -109,43 +117,24 @@ function test_input($data) {
       background-color: #333;
   }
 
-  li {
+  .navbar>ul>li {
       float: left;
-      width:20%;
-      height:50px;
-      padding:0;
-      margin:0;
+      width: 20%;
+      align-items: center;
+      text-align: center;
   }
 
-  li a{
-      display: block;
+  .navbar>ul>li a, .dropbtn {
+      display: inline-block;
       color: white;
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
+      font-family: Lato;
+
   }
 
-  a:hover:not(.active) {
-      background-color: #111;
-  }
-
-  .active {
-  background-color:#4CAF50;
-  }
-
-  #cover{
-    height:250px;
-    width:1000px;
-    margin:0;
-    padding:0;
-  }
-  #logo{
-    width:1500px;
-    max-width:100%;
-    max-height: 100%;
-    margin: 0;
-  }
-  li a:hover, .dropdown:hover .dropbtn {
+  li:hover, .dropdown:hover .dropbtn {
       background-color: black;
   }
 
@@ -156,20 +145,23 @@ function test_input($data) {
   .dropdown-content {
       display: none;
       position: absolute;
-      background-color: #f9f9f9;
+      background-color:black;
       min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
       z-index: 1;
+        width:20%;
   }
 
   .dropdown-content a {
-      color: black;
+      color:white;
       padding: 12px 16px;
       text-decoration: none;
       display: block;
-      text-align: left;
-      width: 173px;
-      height: 15px;
+      text-align:center;
+
+  }
+  .active {
+      background-color: #4CAF50;
+      color: white;
   }
 
   .dropdown-content a:hover {background-color: #f1f1f1}
@@ -177,10 +169,6 @@ function test_input($data) {
   .dropdown:hover .dropdown-content {
       display: block;
   }
-  #navbar{
-    margin: 0;
-  }
-
   *, *:before, *:after {
     box-sizing: border-box;
   }
@@ -293,7 +281,7 @@ function test_input($data) {
     font-size: 22px;
     display: block;
     width: 100%;
-    height: 100%;
+    height: auto;
     padding: 5px 10px;
     background: none;
     background-image: none;
@@ -362,20 +350,23 @@ function test_input($data) {
   }
   div.background {
     background: url(login1.jpg);
-    border: 2px solid black;
     background-size:100%;
-    height:800px;
+    background-blend-mode: lighten;
+    height:1000px;
     width:100%;
-    bottom:0;
-    background-repeat: no-repeat;
+    position: absolute  ;
+    margin: 0;
+    padding: 0;
+    align-items: stretch;
   }
+
 
   </style>
   <meta charset="UTF-8">
   <title>Sign-Up/Login Form</title>
 <!--  <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>-->
 <!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">-->
-
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato" />
 
 
 </head>
@@ -384,9 +375,9 @@ function test_input($data) {
   <div id="cover">
   <img id="logo" src="adogtion11.png"></img>
   </div>
-  <div id="navbar">
+  <div class="navbar">
   <ul>
-    <li><a class="active" href="#home">Home</a></li>
+    <li class="active"><a  href="#home">Home</a></li>
     <li class="dropdown">
       <a href="javascript:void(0)" class="dropbtn">About</a>
       <div class="dropdown-content">
@@ -402,10 +393,11 @@ function test_input($data) {
         <a href="#">Dog Shop</a>
       </div>
     </li>
-    <li><a class="nav" href="#about">News</a></li>
-    <li><a class="nav" href="#contact">Login</a></li>
+    <li><a href="#about">News</a></li>
+    <li><a href="#contact">Login</a></li>
   </ul>
   </div>
+
   <div class="background">
   <div class="form">
 

@@ -31,39 +31,27 @@ div.transbox {
   background-color: #ffffff;
   opacity: 0.6;
   filter: alpha(opacity=60); /* For IE8 and earlier */
-<<<<<<< HEAD
   height:auto;
-=======
-  height:60%;
->>>>>>> 33e2ad91fb17169320c4e9d4006caf06d289b0d0
   width:80%;
   position: relative;
   align-items: center;
 }
 
-<<<<<<< HEAD
 p.text {
-=======
-div.transbox p {
->>>>>>> 33e2ad91fb17169320c4e9d4006caf06d289b0d0
   margin: 10%;
   padding: 5%;
   font-weight: bold;
   color: #000000;
   line-height: 40px;
-<<<<<<< HEAD
   font-family: Lato;
-=======
-  font-family: 'Lato';
->>>>>>> 33e2ad91fb17169320c4e9d4006caf06d289b0d0
   font-style: normal;
   font-size: 18px;
   text-align: justify;
 }
-#navbar{
+.navbar{
   margin: 0;
 }
-ul {
+.navbar>ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -71,24 +59,20 @@ ul {
     background-color: #333;
 }
 
-li {
+.navbar>ul>li {
     float: left;
     width: 20%;
     align-items: center;
     text-align: center;
 }
 
-li a, .dropbtn {
+.navbar>ul>li a, .dropbtn {
     display: inline-block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-<<<<<<< HEAD
     font-family: Lato;
-=======
-
->>>>>>> 33e2ad91fb17169320c4e9d4006caf06d289b0d0
 
 }
 
@@ -117,29 +101,22 @@ li.dropdown {
     text-align:center;
 
 }
-<<<<<<< HEAD
 .active {
     background-color: #4CAF50;
     color: white;
 }
-=======
->>>>>>> 33e2ad91fb17169320c4e9d4006caf06d289b0d0
 
 .dropdown-content a:hover {background-color: #f1f1f1}
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
-<<<<<<< HEAD
 .heading p{
   font-family: Lato;
   font-size: 50px;
   font-weight: bold;
-  text-align:left;
-  text-emphasis-position: below;
+  text-align: center;
 }
 .heading{
 
 }
-=======
->>>>>>> 33e2ad91fb17169320c4e9d4006caf06d289b0d0
